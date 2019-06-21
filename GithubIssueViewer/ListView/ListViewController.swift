@@ -1,20 +1,18 @@
 //
-//  ViewController.swift
+//  ListViewController.swift
 //  GithubIssueViewer
 //
 //  Created by Udit on 21/06/19.
 //  Copyright © 2019 iOSDemo. All rights reserved.
 //
 
-import UIKit
+import RxSwift
 
-class ViewController: UIViewController {
+class ListViewController: UIViewController {
+    
+    let bag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-
 }
-

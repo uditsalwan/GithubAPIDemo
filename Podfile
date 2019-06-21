@@ -2,8 +2,7 @@
 platform :ios, '9.0'
 
 def rx_swift
-    pod 'RxSwift'
-    pod 'RxCocoa'
+    pod 'RxSwift', '~> 4.5.0'
 end
 
 target 'GithubIssueViewer' do
@@ -12,7 +11,7 @@ target 'GithubIssueViewer' do
 
   # Pods for GithubIssueViewer
     rx_swift
-    pod 'ObjectMapper'
+    pod 'ObjectMapper', '~> 3.4.2'
     pod 'Alamofire'
     pod 'AlamofireNetworkActivityLogger'	
 

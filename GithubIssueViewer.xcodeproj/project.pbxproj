@@ -14,7 +14,16 @@
 		A56186BF22BC9269005CB8FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A56186B222BC9269005CB8FF /* Main.storyboard */; };
 		A56186C022BC9269005CB8FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56186B422BC9269005CB8FF /* AppDelegate.swift */; };
 		A56186C122BC9269005CB8FF /* GithubIssueViewer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A56186B822BC9269005CB8FF /* GithubIssueViewer.xcdatamodeld */; };
-		A56186C222BC9269005CB8FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56186BB22BC9269005CB8FF /* ViewController.swift */; };
+		A56186C222BC9269005CB8FF /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56186BB22BC9269005CB8FF /* ListViewController.swift */; };
+		A56F21DD22BCE24200317F61 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56F21D822BCE24200317F61 /* NetworkClient.swift */; };
+		A56F21DE22BCE24200317F61 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56F21D922BCE24200317F61 /* APIError.swift */; };
+		A56F21DF22BCE24200317F61 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56F21DA22BCE24200317F61 /* APIRequest.swift */; };
+		A56F21E022BCE24200317F61 /* NetworkConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56F21DB22BCE24200317F61 /* NetworkConfiguration.swift */; };
+		A56F21E122BCE24200317F61 /* APIRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56F21DC22BCE24200317F61 /* APIRequestHandler.swift */; };
+		A56F21E422BCE28F00317F61 /* APINetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56F21E322BCE28F00317F61 /* APINetwork.swift */; };
+		A56F21E722BCE6F800317F61 /* GitIssue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56F21E622BCE6F800317F61 /* GitIssue.swift */; };
+		A56F21EA22BCE9DE00317F61 /* NetworkResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56F21E922BCE9DE00317F61 /* NetworkResolver.swift */; };
+		A56F21EC22BCEA5C00317F61 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56F21EB22BCEA5C00317F61 /* AppConstants.swift */; };
 		A9078D24C97A671E9A25F11F /* Pods_GithubIssueViewerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F14A367BCD92AD53A244EAF /* Pods_GithubIssueViewerTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,7 +52,16 @@
 		A56186B222BC9269005CB8FF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A56186B422BC9269005CB8FF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A56186B922BC9269005CB8FF /* GithubIssueViewer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GithubIssueViewer.xcdatamodel; sourceTree = "<group>"; };
-		A56186BB22BC9269005CB8FF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A56186BB22BC9269005CB8FF /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		A56F21D822BCE24200317F61 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		A56F21D922BCE24200317F61 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		A56F21DA22BCE24200317F61 /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		A56F21DB22BCE24200317F61 /* NetworkConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConfiguration.swift; sourceTree = "<group>"; };
+		A56F21DC22BCE24200317F61 /* APIRequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestHandler.swift; sourceTree = "<group>"; };
+		A56F21E322BCE28F00317F61 /* APINetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APINetwork.swift; sourceTree = "<group>"; };
+		A56F21E622BCE6F800317F61 /* GitIssue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitIssue.swift; sourceTree = "<group>"; };
+		A56F21E922BCE9DE00317F61 /* NetworkResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResolver.swift; sourceTree = "<group>"; };
+		A56F21EB22BCEA5C00317F61 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		C78BB5E8C21FBBA22F54F80F /* Pods-GithubIssueViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubIssueViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GithubIssueViewer/Pods-GithubIssueViewer.debug.xcconfig"; sourceTree = "<group>"; };
 		CED2E00B90A52ACCD8E5563D /* Pods_GithubIssueViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GithubIssueViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -151,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				A56186B422BC9269005CB8FF /* AppDelegate.swift */,
+				A56F21EB22BCEA5C00317F61 /* AppConstants.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -165,6 +184,8 @@
 		A56186B622BC9269005CB8FF /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				A56F21E822BCE9DE00317F61 /* DependencyResolver */,
+				A56F21CC22BCADC400317F61 /* Network */,
 				A56186B722BC9269005CB8FF /* PersistentStorage */,
 			);
 			path = Core;
@@ -181,9 +202,55 @@
 		A56186BA22BC9269005CB8FF /* ListView */ = {
 			isa = PBXGroup;
 			children = (
-				A56186BB22BC9269005CB8FF /* ViewController.swift */,
+				A56186BB22BC9269005CB8FF /* ListViewController.swift */,
 			);
 			path = ListView;
+			sourceTree = "<group>";
+		};
+		A56F21CC22BCADC400317F61 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A56F21E522BCE5F800317F61 /* Models */,
+				A56F21E222BCE27700317F61 /* GitHubAPI */,
+				A56F21D722BCE24200317F61 /* CoreNetworking */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A56F21D722BCE24200317F61 /* CoreNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				A56F21D822BCE24200317F61 /* NetworkClient.swift */,
+				A56F21D922BCE24200317F61 /* APIError.swift */,
+				A56F21DA22BCE24200317F61 /* APIRequest.swift */,
+				A56F21DB22BCE24200317F61 /* NetworkConfiguration.swift */,
+				A56F21DC22BCE24200317F61 /* APIRequestHandler.swift */,
+			);
+			path = CoreNetworking;
+			sourceTree = "<group>";
+		};
+		A56F21E222BCE27700317F61 /* GitHubAPI */ = {
+			isa = PBXGroup;
+			children = (
+				A56F21E322BCE28F00317F61 /* APINetwork.swift */,
+			);
+			path = GitHubAPI;
+			sourceTree = "<group>";
+		};
+		A56F21E522BCE5F800317F61 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A56F21E622BCE6F800317F61 /* GitIssue.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A56F21E822BCE9DE00317F61 /* DependencyResolver */ = {
+			isa = PBXGroup;
+			children = (
+				A56F21E922BCE9DE00317F61 /* NetworkResolver.swift */,
+			);
+			path = DependencyResolver;
 			sourceTree = "<group>";
 		};
 		EC0779E65DDF61370FCC2F00 /* Frameworks */ = {
@@ -351,8 +418,6 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityLogger/AlamofireNetworkActivityLogger.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -362,8 +427,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireNetworkActivityLogger.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,9 +441,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A56186C222BC9269005CB8FF /* ViewController.swift in Sources */,
+				A56F21E722BCE6F800317F61 /* GitIssue.swift in Sources */,
+				A56186C222BC9269005CB8FF /* ListViewController.swift in Sources */,
 				A56186C122BC9269005CB8FF /* GithubIssueViewer.xcdatamodeld in Sources */,
 				A56186C022BC9269005CB8FF /* AppDelegate.swift in Sources */,
+				A56F21E122BCE24200317F61 /* APIRequestHandler.swift in Sources */,
+				A56F21DE22BCE24200317F61 /* APIError.swift in Sources */,
+				A56F21E022BCE24200317F61 /* NetworkConfiguration.swift in Sources */,
+				A56F21EC22BCEA5C00317F61 /* AppConstants.swift in Sources */,
+				A56F21DF22BCE24200317F61 /* APIRequest.swift in Sources */,
+				A56F21DD22BCE24200317F61 /* NetworkClient.swift in Sources */,
+				A56F21E422BCE28F00317F61 /* APINetwork.swift in Sources */,
+				A56F21EA22BCE9DE00317F61 /* NetworkResolver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
