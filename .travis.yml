@@ -1,0 +1,4 @@
+language: swift
+xcode_workspace: GithubIssueViewer.xcworkspace
+xcode_scheme: GithubIssueViewer
+xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone X
