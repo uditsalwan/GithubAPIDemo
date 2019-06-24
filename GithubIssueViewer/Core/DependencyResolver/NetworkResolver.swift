@@ -12,30 +12,23 @@ protocol NetworkResolverProtocol {
     func resolveAPINetwork() -> APINetworkProtocol
 }
 
-final class NetworkResolver: NetworkResolverProtocol {
+class NetworkResolver: NetworkResolverProtocol {
     
-    public static let shared = NetworkResolver()
-    private init() { }
-
     let SERVER_BASE_URL = AppConstants.baseUrl
-
     var networkClient: NetworkClientProtocol?
-    var loginNetworkClient: NetworkClientProtocol?
+    
+    init() { }
 
     func getNetworkClient() -> NetworkClientProtocol {
         if let client = self.networkClient {
             return client
         } else {
-            let newClient = createNetworkClient(tokenString: AppConstants.accessToken)
+            let config = NetworkConfiguration()
+            config.setup(baseURL: "\(SERVER_BASE_URL)", token: AppConstants.accessToken)
+            let newClient = NetworkClient(config)
             self.networkClient = newClient
             return newClient
         }
-    }
-
-    func createNetworkClient(tokenString: String?) -> NetworkClientProtocol {
-        let config = NetworkConfiguration()
-        config.setup(baseURL: "\(SERVER_BASE_URL)", token: tokenString)
-        return NetworkClient(config)
     }
     
     func resolveAPINetwork() -> APINetworkProtocol {

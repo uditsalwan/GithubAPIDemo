@@ -8,21 +8,34 @@
 
 import Foundation
 
+/**
+ Error response model used to handle different errors throughout the application.
+ 
+ Errors can be:
+ 
+ - `mappingFailed` -
+ Mapping of server response to required model failed
+ - `invalidURL` -
+ Request builder failed to create a valid URL
+ - `emptyResponse` -
+ Response received from server does not contain data
+ - `noContent` -
+ 204 Response received from server
+ - `badResponse` -
+ Error recieved from server or HTTP status code is not in valid range
+ - Tag: APIError
+ */
 public enum APIError : Error {
     case mappingFailed
     case invalidURL
     case emptyResponse
     case noContent
-    case nonZeroResponse(code: Int, desc: String?)
     case badResponse(code: Int?, desc: String?)
-    case unavailableForGuest
 }
 
 extension APIError {
     public var code: Int {
         switch self {
-        case .nonZeroResponse(let code, _):
-            return code
         case .badResponse(let code, _):
             return code ?? 0
         case .emptyResponse:
@@ -33,8 +46,6 @@ extension APIError {
     }
     public var description: String? {
         switch self {
-        case .nonZeroResponse(_, let description):
-            return description
         case .badResponse(_, let description):
             return description ?? ""
         default:
@@ -46,8 +57,6 @@ extension APIError {
 extension APIError: LocalizedError {
     public var errorDescription: String? {
         switch self {
-        case .nonZeroResponse(_, let description):
-            return description
         case .badResponse(_, let description):
             return description ?? "Error"
         default:

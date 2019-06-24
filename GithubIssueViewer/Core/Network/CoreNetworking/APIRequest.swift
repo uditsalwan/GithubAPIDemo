@@ -9,14 +9,22 @@
 import Foundation
 import Alamofire
 
+/**
+ Request model to make API calls
+ 
+ Attributes
+ 
+    - method: HTTP metod type - get, post etc.
+    - path: Path for API call
+    - parameters: Parameters dictionary
+    - parametersArray: Parameters array
+ - Tag: APIRequest
+ */
 struct APIRequest {
     let method: HTTPMethod
     let path: String
     let parameters: [String: Any]
     let parametersArray: [Any]?
-    
-    var isURLEncodedRequest = false
-    var isRawDataRequest = false
     
     init(method: HTTPMethod, path: String) {
         self.method = method
@@ -37,13 +45,5 @@ struct APIRequest {
         self.path = path
         self.parameters = [:]
         self.parametersArray = parametersArray
-    }
-    
-    init(method: HTTPMethod, path: String, parameters: [String: Any], isURLEncodedRequest: Bool) {
-        self.method = method
-        self.path = path
-        self.parameters = parameters
-        self.parametersArray = nil
-        self.isURLEncodedRequest = isURLEncodedRequest
     }
 }

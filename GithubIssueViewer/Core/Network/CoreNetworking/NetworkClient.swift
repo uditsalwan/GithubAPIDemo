@@ -17,6 +17,7 @@ protocol NetworkClientProtocol {
     func request<Response: ImmutableMappable>(_ request: APIRequest) -> Single<[Response]>
 }
 
+/// Base network class to make API requests
 final class NetworkClient : NetworkClientProtocol {
     var baseURL : URL?
     private let dispatch : DispatchQueue
@@ -48,10 +49,12 @@ final class NetworkClient : NetworkClientProtocol {
         guard let baseURL = baseURL else {
             throw APIError.invalidURL
         }
-        switch (request.path.hasPrefix("/"), baseURL.absoluteString.hasSuffix("/")) {
-        case (false,false): path = "\(baseURL.absoluteString)/\(path)"
-        case (true, true): path = "\(baseURL.absoluteString)/\(path)".replacingOccurrences(of: "///", with: "/")
-        default: path = "\(baseURL.absoluteString)\(path)"
+        if !path.hasPrefix(baseURL.absoluteString) {
+            switch (request.path.hasPrefix("/"), baseURL.absoluteString.hasSuffix("/")) {
+            case (false,false): path = "\(baseURL.absoluteString)/\(path)"
+            case (true, true): path = "\(baseURL.absoluteString)/\(path)".replacingOccurrences(of: "///", with: "/")
+            default: path = "\(baseURL.absoluteString)\(path)"
+            }
         }
         guard let concatenatedURL = URL(string: path) else {
             throw APIError.invalidURL

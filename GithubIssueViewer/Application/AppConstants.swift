@@ -11,6 +11,7 @@ import Foundation
 public struct AppConstants {
     public static let baseUrl = "https://api.github.com"
     public static let firebaseRepo = "firebase/firebase-ios-sdk"
+    public static let issueBodyDisplayLength = 140
     // Token added here only for demo purposes
     public static let accessToken = "7cb8ff77beada18e9705037b0ee6464da268ffb4"
 }

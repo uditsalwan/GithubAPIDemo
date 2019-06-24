@@ -13,6 +13,7 @@ protocol APIRequestAdapter : RequestAdapter {
     var token : String? { get set }
 }
 
+/// Used to build Header fields for API requests
 internal class APIRequestHandler: APIRequestAdapter {
     var token : String?
     

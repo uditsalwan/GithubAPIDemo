@@ -3,6 +3,7 @@ platform :ios, '9.0'
 
 def rx_swift
     pod 'RxSwift', '~> 4.5.0'
+    pod 'RxCocoa', '~> 4.5.0'
 end
 
 target 'GithubIssueViewer' do
