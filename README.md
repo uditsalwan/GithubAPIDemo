@@ -1,5 +1,5 @@
-# Github API Demo
-[![Build Status](https://travis-ci.com/uditsalwan/GithubAPIDemo.svg?branch=master)](https://travis-ci.com/uditsalwan/GithubAPIDemo)
+# Github API Demo [![Build Status](https://travis-ci.com/uditsalwan/GithubAPIDemo.svg?branch=master)](https://travis-ci.com/uditsalwan/GithubAPIDemo)
+
 Demo for using Github APIs in iOS application with Swift, MVVM and Rx bindings.
 
 - **Issues API**
