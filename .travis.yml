@@ -1,6 +1,8 @@
 language: swift
 osx_image: xcode10.1
-xcode_workspace: GithubIssueViewer.xcworkspace
-xcode_scheme: GithubIssueViewer
-xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone X
-install: pod repo update
+script: xcodebuild clean build test -workspace GithubIssueViewer.xcworkspace -scheme GithubIssueViewer -destination platform\=iOS\ Simulator,OS\=12.1,name\=iPhone\ X -UseModernBuildSystem=NO ONLY_ACTIVE_ARCH=NO | xcpretty
+install:
+  - pod repo update
+  - pod install
+cache:
+  - cocoapods
