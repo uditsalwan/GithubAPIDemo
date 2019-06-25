@@ -1,12 +1,13 @@
 # Github API Demo
+[![Build Status](https://travis-ci.com/uditsalwan/GithubAPIDemo.svg?branch=master)](https://travis-ci.com/uditsalwan/GithubAPIDemo)
 Demo for using Github APIs in iOS application with Swift, MVVM and Rx bindings.
 
 - **Issues API**
-  Used to get all the issues for a Repository.
+Used to get all the issues for a Repository.
 
 - **Comments API**
-  Used to get all the comments on a single Issue for a Repository.
-  
+Used to get all the comments on a single Issue for a Repository.
+
 #### [Github API Documentation](https://developer.github.com/v3/)
 
 #### AppIcon Credits
